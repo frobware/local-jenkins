@@ -1,0 +1,20 @@
+jenkins:
+  systemMessage: "Jenkins As Code"
+  numExecutors: 5
+  mode: NORMAL
+  scmCheckoutRetryCount: 3
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: doas
+          password: sudo
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  remotingSecurity:
+    enabled: true
+unclassified:
+  location:
+    adminAddress: "admin@localhost.com"
+    url: http://127.0.0.1:8080/

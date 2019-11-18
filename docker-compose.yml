@@ -1,0 +1,14 @@
+version: '3'
+services:
+  jenkins:
+    build: .
+    image: local-jenkins:latest
+    env_file:
+      - jenkins.env
+    volumes:
+      - ./config.yml:/var/jenkins_casc.yml
+      - ~/.config/gcloud:/var/jenkins_home/.config/gcloud
+      - ~/.boto:/var/jenkins_home/.boto
+    ports:
+      - "8080:8080"
+      - "50000:50000"
