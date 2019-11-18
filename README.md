@@ -1,11 +1,11 @@
-[Automatically] Standup a local Jenkins instance using [CASC](https://github.com/jenkinsci/configuration-as-code-plugin)
+[Automatically] Standup a local Jenkins instance using [JCasC](https://github.com/jenkinsci/configuration-as-code-plugin)
 
 This jenkins instance is only meant for local development. There's no
 real credientials, no real split between an admin user and a non-admin
 user. And it also expects to mount secrets from your $HOME directory.
 
 It does, however, rely on
-[CASC](https://github.com/jenkinsci/configuration-as-code-plugin) for
+[JCasC](https://github.com/jenkinsci/configuration-as-code-plugin) for
 a hands-off configuration and repeatable deployments.
 
 ## Build/Run
