@@ -1,0 +1,6 @@
+- job:
+    name: gcloud-auth-list
+    description: 'gcloud: lists credentialed accounts'
+    project-type: freestyle
+    builders:
+      - shell: !include-raw scripts/verify-gcloud-credentials.sh
